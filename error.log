@@ -1,0 +1,21 @@
+2022-03-21 18:17:22 [scrapy.core.scraper] ERROR: Spider error processing <GET https://gamewith.jp/kuronekowiz/> (referer: None)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/twisted/internet/defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/Users/user/python33/nanika/nanika/spiders/nanika.py", line 14, in kansu
+    txt.write(response.body)
+TypeError: write() argument must be str, not bytes
+2022-03-21 18:19:44 [scrapy.core.scraper] ERROR: Spider error processing <GET https://gamewith.jp/kuronekowiz/> (referer: None)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/twisted/internet/defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/Users/user/python33/nanika/nanika/spiders/nanika.py", line 15, in kansu
+    txt.write(vb)
+TypeError: write() argument must be str, not int
+2022-03-21 18:32:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://gamewith.jp/kuronekowiz/> (referer: None)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/twisted/internet/defer.py", line 857, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "/Users/user/python33/nanika/nanika/spiders/nanika.py", line 11, in kansu
+    res = response.xpass("/html/body/div[3]/div[2]/ul/li[4]/a").get()
+AttributeError: 'HtmlResponse' object has no attribute 'xpass'
