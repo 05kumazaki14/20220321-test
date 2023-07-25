@@ -1,0 +1,14 @@
+# coding: utf-8
+# 特定期間の西暦年と昭和年の対応表を作る
+# 1行目：開始年
+# 2行目：期間
+# 昭和年 = 西暦年 - 1925
+# 出力：西暦XXXX年は昭和YY年です
+
+seireki = int(input())
+count = int(input())
+
+for i in range(count):
+    shouwa = seireki - 1925
+    print("西暦" + str(seireki) + "年は昭和" + str(shouwa) + "年です")
+    seireki += 1
