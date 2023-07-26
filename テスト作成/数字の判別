@@ -1,0 +1,10 @@
+# coding: utf-8
+# 自分の得意な言語で
+# 入力された数字をリストに分けて、5以上の数字の数を数えるやつ
+num1 = int(input().rstrip())
+num2 = input().rstrip().split(" ")
+
+#print(num2)
+numlist = [int(x) for x in num2]
+#print(numlist)
+print(sum([i > 5 for i in numlist]) )
