@@ -1,0 +1,6 @@
+import sys
+for line in sys.stdin.readlines():
+	array = [x.strip() for x in line.split(',')]
+
+	print(array[0] + "が" + str(array[1]) + "匹現れた")
+	
