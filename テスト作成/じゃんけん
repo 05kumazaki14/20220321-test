@@ -9,7 +9,7 @@ line = input().rstrip()
 janken = line.split(",")
 
 # リストの要素数を変数に代入
-num = 3
+num = len(janken)
 
 # リストの中身を出力
 print(janken)
