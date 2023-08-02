@@ -1,0 +1,23 @@
+items_imges = {
+    "剣" : "http://paiza.jp/learning/images/sword.png",
+    "盾" : "http://paiza.jp/learning/images/shield.png",
+    "回復薬" : "http://paiza.jp/learning/images/potion.png",
+    "クリスタル" : "http://paiza.jp/learning/images/crystal.png"
+}
+
+# ここから下を記述しよう
+import sys
+num = int(input())
+
+for i in sys.stdin.readlines():
+    items_name = i.rstrip()
+    print("<img src='" + items_imges[items_name] + "'>")
+
+#入力値
+#6
+#回復薬
+#盾
+#クリスタル
+#クリスタル
+#剣
+#剣
